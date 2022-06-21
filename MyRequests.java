@@ -22,7 +22,7 @@ public class MyRequests extends javax.swing.JFrame {
     }
     
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
@@ -85,7 +85,6 @@ public class MyRequests extends javax.swing.JFrame {
         jPanel5.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 140, 40));
 
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setIcon(new javax.swing.ImageIcon("C:\\Users\\bunny\\OneDrive\\Documents\\NetBeansProjects\\Venue\\src\\main\\java\\Images\\request.png")); // NOI18N
         jPanel5.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 40, 40));
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 280, 60));
@@ -109,8 +108,6 @@ public class MyRequests extends javax.swing.JFrame {
             }
         });
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 110, 40));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon("C:\\Users\\bunny\\OneDrive\\Documents\\NetBeansProjects\\Venue\\src\\main\\java\\Images\\home.png")); // NOI18N
         jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 10, 30, 40));
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 280, 60));
@@ -136,7 +133,6 @@ public class MyRequests extends javax.swing.JFrame {
         jPanel7.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 140, 40));
 
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setIcon(new javax.swing.ImageIcon("C:\\Users\\bunny\\OneDrive\\Documents\\NetBeansProjects\\Venue\\src\\main\\java\\Images\\pin.png")); // NOI18N
         jPanel7.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 40, 40));
 
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 250, 280, 60));
@@ -162,7 +158,6 @@ public class MyRequests extends javax.swing.JFrame {
         jPanel8.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 10, 110, 40));
 
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setIcon(new javax.swing.ImageIcon("C:\\Users\\bunny\\OneDrive\\Documents\\NetBeansProjects\\Venue\\src\\main\\java\\Images\\exit.png")); // NOI18N
         jPanel8.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 40, 40));
 
         jPanel1.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 280, 60));
@@ -213,13 +208,12 @@ public class MyRequests extends javax.swing.JFrame {
 
         jTable1.setAutoCreateRowSorter(true);
         jTable1.setBackground(new java.awt.Color(188, 229, 229));
-        jTable1.setForeground(new java.awt.Color(0, 0, 0));
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
             },
             new String [] {
-                "Name", "Email", "Pno", "Vname"
+                "Name", "Email", "Pno", "Vname", "Date"
             }
         ));
         jTable1.setGridColor(new java.awt.Color(0, 0, 0));
@@ -227,7 +221,7 @@ public class MyRequests extends javax.swing.JFrame {
         jTable1.setSelectionForeground(new java.awt.Color(0, 0, 0));
         jScrollPane1.setViewportView(jTable1);
 
-        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 560, 310));
+        jPanel3.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, 540, 310));
 
         jLabel12.setFont(new java.awt.Font("Segoe UI Semibold", 1, 28)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 0, 102));
@@ -238,6 +232,11 @@ public class MyRequests extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(204, 255, 255));
         jButton1.setText("Decline");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 600, 100, 30));
 
         jButton2.setBackground(new java.awt.Color(0, 51, 102));
@@ -270,60 +269,60 @@ public class MyRequests extends javax.swing.JFrame {
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 640, 670));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
     
     
-    private void TXMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TXMouseClicked
+    private void TXMouseClicked(java.awt.event.MouseEvent evt) {                                
         
         dispose();
-    }//GEN-LAST:event_TXMouseClicked
+    }                               
 
-    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
+    private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {                                     
     AddVenues av = new AddVenues();
     av.setVisible(true);
     dispose();
-    }//GEN-LAST:event_jPanel7MouseClicked
+    }                                    
 
-    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {                                     
     AddVenues av = new AddVenues();
     av.setVisible(true);
     dispose();    
-    }//GEN-LAST:event_jLabel4MouseClicked
+    }                                    
 
-    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
+    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {                                     
     Login l = new Login();
     l.setVisible(true);
     dispose();
-    }//GEN-LAST:event_jPanel8MouseClicked
+    }                                    
 
-    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
+    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {                                     
     dealer d = new dealer();
     d.setVisible(true);
     dispose();
-    }//GEN-LAST:event_jPanel6MouseClicked
+    }                                    
 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {                                     
     dealer d = new dealer();
     d.setVisible(true);
     dispose();
-    }//GEN-LAST:event_jLabel3MouseClicked
+    }                                    
 
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {                                     
     Login l = new Login();
     l.setVisible(true);
     dispose();    
        
-    }//GEN-LAST:event_jLabel5MouseClicked
+    }                                    
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }                                        
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {                                      
         
     try{
-            String str="SELECT `Name`, `Email`, `Pno`, `Vname` FROM `booking` WHERE 1";
+            String str="SELECT `Name`, `Email`, `Pno`, `Vname`,`Date` FROM `booking` WHERE 1";
             C=DriverManager.getConnection("jdbc:mysql://localhost:3306/venue?serverTimezone-UTC [root on Default schema]","root","mahi");
             S=C.prepareStatement(str);
             R=S.executeQuery();
@@ -333,8 +332,9 @@ public class MyRequests extends javax.swing.JFrame {
                 String E = R.getString("Email");
                 String PN = R.getString("Pno");
                 String VN = R.getString("Vname");
+                String D = R.getString("Date");
 
-                String tbdata1[] = {N,E,PN,VN};
+                String tbdata1[] = {N,E,PN,VN,D};
                 DefaultTableModel tb1Model = (DefaultTableModel)jTable1.getModel();   
                 tb1Model.addRow(tbdata1);
             }
@@ -344,9 +344,9 @@ public class MyRequests extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, e.getMessage());
         }    
 
-    }//GEN-LAST:event_jButton2MouseClicked
+    }                                     
 
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {                                      
     
     try{
         
@@ -361,59 +361,30 @@ public class MyRequests extends javax.swing.JFrame {
         }   catch (SQLException ex) {
                 Logger.getLogger(MyRequests.class.getName()).log(Level.SEVERE, null, ex);
             }
-    }//GEN-LAST:event_jButton3MouseClicked
+    }                                     
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {                                      
+   try{
+        
+        String str3 = "INSERT INTO `message`(`Msg`) VALUES (?)";
+        C=DriverManager.getConnection("jdbc:mysql://localhost:3306/venue?serverTimezone-UTC [root on Default schema]","root","mahi");
+        S=C.prepareStatement(str3);
+        S.setString(1,"Dealer Has Declined Your Request");
+        S.executeUpdate();
+        JOptionPane.showMessageDialog(this,"Done");
+        
+        
+        }   catch (SQLException ex) {
+                Logger.getLogger(MyRequests.class.getName()).log(Level.SEVERE, null, ex);
+            }
+    }                                     
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(MyRequests.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(MyRequests.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(MyRequests.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(MyRequests.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+    
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new MyRequests().setVisible(true);
-            }
-        });
-    }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JLabel TX;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -441,5 +412,26 @@ public class MyRequests extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTable1;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
+}
+class RequestThread extends Thread {
+    MyRequests r;
+    RequestThread(MyRequests r)
+    {
+       this.r = r; 
+    }
+    synchronized public void run()
+    {
+            java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new MyRequests().setVisible(true);
+            }
+        });
+    }
+    public static void main(String[] args) {
+        MyRequests r= new  MyRequests();
+        RequestThread t2 = new RequestThread(r);
+        t2.start();
+        
+    }
 }
