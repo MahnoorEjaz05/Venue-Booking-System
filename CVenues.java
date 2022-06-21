@@ -6,9 +6,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-
-
-public class CVenues extends javax.swing.JFrame {
+public class CVenues extends javax.swing.JFrame{
 
         Connection C=null;
         PreparedStatement S=null;
@@ -19,7 +17,7 @@ public class CVenues extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
     private void initComponents() {
 
         jPanel2 = new javax.swing.JPanel();
@@ -267,56 +265,56 @@ public class CVenues extends javax.swing.JFrame {
         getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 630, 650));
 
         pack();
-    }// </editor-fold>//GEN-END:initComponents
+    }// </editor-fold>                        
 
-    private void TXMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_TXMouseClicked
+    private void TXMouseClicked(java.awt.event.MouseEvent evt) {                                
 
         dispose();
-    }//GEN-LAST:event_TXMouseClicked
+    }                               
 
-    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
+    private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {                                     
     Customer c = new Customer();
     c.setVisible(true);
     dispose();
         
-    }//GEN-LAST:event_jPanel6MouseClicked
+    }                                    
 
-    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
+    private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {                                     
     Customer c = new Customer();
     c.setVisible(true);
     dispose();    
 
-    }//GEN-LAST:event_jLabel3MouseClicked
+    }                                    
 
-    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
+    private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {                                     
     Login l = new Login();
     l.setVisible(true);
     dispose();
         
-    }//GEN-LAST:event_jPanel8MouseClicked
+    }                                    
 
-    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
+    private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {                                     
     Login l = new Login();
     l.setVisible(true);
     dispose();   
         
-    }//GEN-LAST:event_jLabel5MouseClicked
+    }                                    
 
-    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
+    private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {                                     
     MyBookings mb = new MyBookings();
     mb.setVisible(true);
     dispose();
         
-    }//GEN-LAST:event_jPanel5MouseClicked
+    }                                    
 
-    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel2MouseClicked
+    private void jLabel2MouseClicked(java.awt.event.MouseEvent evt) {                                     
     MyBookings mb = new MyBookings();
     mb.setVisible(true);
     dispose();
         
-    }//GEN-LAST:event_jLabel2MouseClicked
+    }                                    
 
-    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {                                      
 
         try{
             
@@ -331,13 +329,13 @@ public class CVenues extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, e.getMessage());
         } 
  
-    }//GEN-LAST:event_jButton2MouseClicked
+    }                                     
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }                                        
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {                                      
 
         try{
             String str="SELECT `Vname`, `Food`, `Location`, `Price` FROM `venue` WHERE 1";
@@ -360,79 +358,18 @@ public class CVenues extends javax.swing.JFrame {
         catch(Exception e){
             JOptionPane.showMessageDialog(this, e.getMessage());
         }
-    }//GEN-LAST:event_jButton1MouseClicked
+    }                                     
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {                                         
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }                                        
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CVenues.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CVenues.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CVenues.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CVenues.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
+    
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new CVenues().setVisible(true);
-            }
-        });
-    }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // Variables declaration - do not modify                     
     private javax.swing.JLabel TX;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
@@ -459,5 +396,27 @@ public class CVenues extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JTable jTable1;
-    // End of variables declaration//GEN-END:variables
+    // End of variables declaration                   
 }
+class CVThread extends Thread {
+    CVenues c;
+    CVThread(CVenues c)
+    {
+       this.c = c; 
+    }
+    synchronized public void run()
+    {
+            java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new CVenues().setVisible(true);
+            }
+        });
+    }
+    public static void main(String[] args) {
+        CVenues c= new  CVenues();
+        CVThread t5 = new CVThread(c);
+        t5.start();
+        
+    }
+}
+
